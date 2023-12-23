@@ -60,11 +60,10 @@ async def run(bot, message):
             await asyncio.sleep(1)
         except Exception as e:
             print(e)
-            pass
    # await m.delete()
     buttons = [[
         InlineKeyboardButton('📜 Support Group', url='https://t.me/mo_tech_YT')
-    ]] 
+    ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await m.edit(
         text=f"<u><i>Successfully Forwarded</i></u>\n\n<b>Total Forwarded Files:-</b> <code>{files_count}</code> <b>Files</b>\n<b>Thanks For Using Me❤️</b>",
